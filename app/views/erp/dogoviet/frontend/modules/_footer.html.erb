@@ -1,0 +1,112 @@
+<footer class="site__footer">
+    <div class="site-footer">
+        <div class="decor site-footer__decor decor--type--bottom">
+            <div class="decor__body">
+                <div class="decor__start"></div>
+                <div class="decor__end"></div>
+                <div class="decor__center"></div>
+            </div>
+        </div>
+        <div class="site-footer__widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-4">
+                        <div class="site-footer__widget footer-contacts">
+                            <h5 class="footer-contacts__title">QUANG MINH 98</h5>                            
+                            <address class="footer-contacts__contacts">
+                                <dl><dt>Số Điện Thoại</dt><dd><%= link_to '0967 420 297', 'tel:0967420297', title: '' %></dd></dl>
+                                <dl><dt>Email</dt><dd><%= mail_to 'noithatquangminh98@gmail.com', 'noithatquangminh98@gmail.com', title: '' %></dd></dl>
+                                <dl>
+                                    <dt>Địa Chỉ Mua Hàng</dt>
+                                    <dd><%= link_to '98 Trường Chinh, Phường 12, Q. Tân Bình, TP. Hồ Chí Minh',
+                                            'https://www.google.com/maps/place/Quang+Minh+98+Tr%C6%B0%E1%BB%9Dng+Chinh+-+%C4%90%E1%BB%93+g%E1%BB%97+n%E1%BB%99i+th%E1%BA%A5t,+%C4%91%E1%BB%93+th%E1%BB%9D+c%C3%BAng/@10.7942368,106.6490893,17z/data=!3m1!4b1!4m5!3m4!1s0x317529f6b299cfd9:0x82f9fe4d3ddc3b05!8m2!3d10.7942368!4d106.651278?hl=vi-VN',
+                                            title: '', target: 'blank' %></dd>
+                                </dl>
+                                <dl>
+                                    <dt>Thời Gian Mở Cửa</dt>
+                                    <dd>Thứ Hai - Chủ Nhật (07:30 ~ 20:59)</dd>
+                                </dl>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3">
+                        <div class="site-footer__widget footer-links">
+                            <h5 class="footer-links__title">HƯỚNG DẪN KHÁCH HÀNG</h5>
+                            <ul class="footer-links__list">
+                                <li class="footer-links__item">
+                                    <%= link_to 'Hướng Dẫn Mua Hàng', '', title: '', class: 'footer-links__link' %>
+                                </li>
+                                <li class="footer-links__item">
+                                    <%= link_to 'Hướng Dẫn Thanh Toán', '', title: '', class: 'footer-links__link' %>
+                                </li>
+                                <li class="footer-links__item">
+                                    <%= link_to 'Vận Chuyển & Giao Nhận', '', title: '', class: 'footer-links__link' %>
+                                </li>
+                                <li class="footer-links__item">
+                                    <%= link_to 'Chính Sách Bảo Hành', '', title: '', class: 'footer-links__link' %>
+                                </li>
+                                <li class="footer-links__item">
+                                    <%= link_to 'Chính Sách Bảo Mật Thông Tin', '', title: '', class: 'footer-links__link' %>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-xl-3">
+                        <div class="site-footer__widget footer-links">
+                            <h5 class="footer-links__title">LIÊN KẾT NHANH</h5>                            
+                            <ul class="footer-links__list">
+                                <li class="footer-links__item">
+                                    <%= link_to 'Giới Thiệu', '', title: '', class: 'footer-links__link' %>
+                                </li>
+                                <li class="footer-links__item">
+                                    <%= link_to 'Liên Hệ', '', title: '', class: 'footer-links__link' %>
+                                </li>
+                                <li class="footer-links__item">
+                                    <%= link_to 'Tin Tức - Tư Vấn', '', title: '', class: 'footer-links__link' %>
+                                </li>
+                                <li class="footer-links__item">
+                                    <%= link_to 'Câu Hỏi Thường Gặp', '', title: '', class: 'footer-links__link' %>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-2">
+                        <div class="site-footer__widget footer-newsletter">
+                            <h5 class="footer-newsletter__title">THEO DÕI TRANG</h5>
+                            <div class="footer-newsletter__social-links social-links">
+                                <ul class="social-links__list">
+                                    <li class="social-links__item social-links__item--facebook">
+                                        <%= link_to '<i class="fab fa-facebook-f"></i>'.html_safe,
+                                            '', title: '', target: '_blank' %>
+                                    </li>
+                                    <li class="social-links__item social-links__item--twitter">
+                                        <%= link_to '<i class="fab fa-twitter"></i>'.html_safe,
+                                            '', title: '', target: '_blank' %>
+                                    </li>
+                                    <li class="social-links__item social-links__item--youtube">
+                                        <%= link_to '<i class="fab fa-youtube"></i>'.html_safe,
+                                            '', title: '', target: '_blank' %>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__bottom-row">
+                    <div class="site-footer__copyright">
+                        Bản quyền &copy; 2019 ~ 2020 <%= link_to 'Quang Minh 98', erp_dogoviet.root_path, title: '', target: '_blank' %>
+                    </div>
+                    <div class="site-footer__dcma">
+                        <a href="//www.dmca.com/Protection/Status.aspx?ID=0ee7b18a-de2c-427a-bad0-a8f48a28bb1a" title="DMCA.COM Protection Status" class="dmca-badge" target="_blank">
+                            <img src="https://images.dmca.com/Badges/dmca_protected_sml_120am.png?ID=0ee7b18a-de2c-427a-bad0-a8f48a28bb1a"  alt="DMCA.COM Protection Status" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

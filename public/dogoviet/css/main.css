@@ -1,0 +1,28 @@
+.site-footer__bottom a:hover {
+    color: #990000;
+}
+.site-footer__bottom a.dmca-badge:hover {
+    opacity: 0.8;
+}
+@media (min-width: 1200px) {
+    .footer-contacts__contacts dl:nth-child(n+3) {
+        width: calc(100% - 30px - 1px);
+    }
+}
+@media (max-width: 419px) {
+    .products-list--grid--5[data-layout=grid] .products-list__item {
+        margin: 8px;
+        width: calc((100% - 16px) / 1);
+    }
+}
+.block-header--has-breadcrumb-detail .block-header__breadcrumb {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.product-description h4 {
+    margin: 5px 0;
+    font-weight: 600;
+}
+.product-description p {
+    margin-bottom: 5px;
+}

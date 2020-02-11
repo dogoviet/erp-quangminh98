@@ -1,0 +1,225 @@
+<div class="block-space block-space--layout--divider-xs"></div>
+<div class="block block-slideshow">
+    <div class="container">
+        <div class="block-slideshow__carousel">
+            <div class="owl-carousel">
+                <% (0..2).each do |slideshow| %>
+                <a class="block-slideshow__item" href="">
+                    <span class="block-slideshow__item-image block-slideshow__item-image--desktop" style="background-image: url('/dogoviet/img/tmp/slider-1350x500.jpg')"></span>
+                    <span class="block-slideshow__item-image block-slideshow__item-image--mobile" style="background-image: url('/dogoviet/img/tmp/slider-mobile-510x480.jpg')"></span>
+                </a>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= render "erp/dogoviet/frontend/modules/newest_listing" %>
+
+<div class="block-space block-space--layout--divider-xs"></div>
+<div class="block-banners block">
+    <div class="container">
+        <div class="block-banners__list">
+            <a href="" class="block-banners__item block-banners__item--style--one">
+                <span class="block-banners__item-image">
+                    <%= image_tag '/dogoviet/img/tmp/banner.jpg', alt: '' %>
+                </span>
+                <span class="block-banners__item-image block-banners__item-image--blur">
+                    <%= image_tag '/dogoviet/img/tmp/banner.jpg', alt: '' %>
+                </span>
+                <span class="block-banners__item-title">Tủ Thờ Cẩn Xà Cừ</span>
+                <span class="block-banners__item-details">
+                    Tủ thờ gỗ cẩm lai được cẩn ốc xà cừ với điển tích nhị thập tứ hiếu ý nghĩa,<br> phù hợp cho việc thờ cúng nhất là trong các điển tích cổ xưa.
+                </span>
+                <span class="block-banners__item-button btn btn-primary btn-sm">Xem Sản Phẩm</span>
+            </a>
+            <a href="" class="block-banners__item block-banners__item--style--two">
+                <span class="block-banners__item-image">
+                    <%= image_tag '/dogoviet/img/tmp/banner.jpg', alt: '' %>
+                </span>
+                <span class="block-banners__item-image block-banners__item-image--blur">
+                    <%= image_tag '/dogoviet/img/tmp/banner.jpg', alt: '' %>
+                </span>
+                <span class="block-banners__item-title">TƯ VẤN PHÒNG THỜ</span>
+                <span class="block-banners__item-details">
+                    Tủ thờ gỗ cẩm lai được cẩn ốc xà cừ với điển tích nhị thập tứ hiếu ý nghĩa,<br> phù hợp cho việc thờ cúng nhất là trong các điển tích cổ xưa.
+                </span>
+                <span class="block-banners__item-button btn btn-primary btn-sm">Xem Sản Phẩm</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="block-space block-space--layout--divider-xs"></div>
+<div class="block block-products-columns">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="block-products-columns__title">Mẫu Bàn Thờ Đẹp</div>
+                <div class="block-products-columns__list">
+                    <% (0..2).each do |product| %>
+                    <div class="block-products-columns__list-item">
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <%= link_to image_tag('/dogoviet/img/tmp/product-245x245.jpg', alt: '', title: ''), '', title: '' %>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__name">
+                                    <%= link_to 'Tủ Thờ Huế Đục Chạm Tiên Cảnh', '', title: '' %>
+                                </div>
+                                <div class="product-card__rating">
+                                    <div class="rating product-card__rating-stars">
+                                        <div class="rating__body">
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__rating-label">4 sao / 25 đánh giá</div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <div class="product-card__prices">
+                                    <div class="product-card__price product-card__price--current"><%= format_price(4000000) %></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% end %>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="block-products-columns__title">Mẫu Tủ Thờ Đẹp</div>
+                <div class="block-products-columns__list">
+                    <% (0..2).each do |product| %>
+                    <div class="block-products-columns__list-item">
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <%= link_to image_tag('/dogoviet/img/tmp/product-245x245.jpg', alt: '', title: ''), '', title: '' %>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__name">
+                                    <%= link_to 'Tủ Thờ Huế Đục Chạm Tiên Cảnh', '', title: '' %>
+                                </div>
+                                <div class="product-card__rating">
+                                    <div class="rating product-card__rating-stars">
+                                        <div class="rating__body">
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__rating-label">4 sao / 25 đánh giá</div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <div class="product-card__prices">
+                                    <div class="product-card__price product-card__price--current"><%= format_price(2500000) %></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% end %>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="block-products-columns__title">Mẫu Tượng Đẹp</div>
+                <div class="block-products-columns__list">
+                    <% (0..2).each do |product| %>
+                    <div class="block-products-columns__list-item">
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <%= link_to image_tag('/dogoviet/img/tmp/product-245x245.jpg', alt: '', title: ''), '', title: '' %>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__name">
+                                    <%= link_to 'Tủ Thờ Huế Đục Chạm Tiên Cảnh', '', title: '' %>
+                                </div>
+                                <div class="product-card__rating">
+                                    <div class="rating product-card__rating-stars">
+                                        <div class="rating__body">
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__rating-label">4 sao / 25 đánh giá</div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <div class="product-card__prices">
+                                    <div class="product-card__price product-card__price--current"><%= format_price(8000000) %></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block-space block-space--layout--divider-xs d-xl-block d-none"></div>
+<div class="block block-posts-carousel block-posts-carousel--layout--list" data-layout="list">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-header__body">
+                <h2 class="section-header__title">Tin Tức - Tư Vấn</h2>
+                <div class="section-header__spring"></div>
+                <div class="section-header__arrows">
+                    <div class="arrow section-header__arrow section-header__arrow--prev arrow--prev">
+                        <button class="arrow__button" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11">
+                                <path d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="arrow section-header__arrow section-header__arrow--next arrow--next">
+                        <button class="arrow__button" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11">
+                                <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9C-0.1,9.8-0.1,10.4,0.3,10.7z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="section-header__divider"></div>
+            </div>
+        </div>
+        <div class="block-posts-carousel__carousel">
+            <div class="owl-carousel">
+                <% (0..4).each do |blog| %>
+                <div class="block-posts-carousel__item">
+                    <div class="post-card">
+                        <div class="post-card__image">
+                            <%= link_to image_tag('/dogoviet/img/tmp/blog-730x485.jpg', alt: ''), '', title: '' %>
+                        </div>
+                        <div class="post-card__content">
+                            <div class="post-card__category">
+                                <a href="">Tin Tức</a>
+                            </div>
+                            <div class="post-card__title">
+                                <h2>
+                                    <a href="">Bàn Thờ Nên Làm Bằng Gỗ Gì Thì Tốt Nhất?</a>
+                                </h2>
+                            </div>
+                            <div class="post-card__date">Đăng bởi <a href="">Quang Minh 98 | Đồ Gỗ Việt</a> (05-12-2019)</div>
+                            <div class="post-card__excerpt">
+                                <div class="typography text-justify">Rất nhiều khách hàng phân vân không biết nên lựa chọn bàn thờ nên làm bằng gỗ gì vừa đẹp, vừa bền giá thành lại hợp lý.....</div>
+                            </div>
+                            <div class="post-card__more">
+                                <a href="" class="btn btn-secondary btn-sm">Xem Tiếp Theo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block-space block-space--layout--divider-xs"></div>

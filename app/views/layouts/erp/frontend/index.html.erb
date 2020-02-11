@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Trang Chủ | Quang Minh 98</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Đồ Gỗ Quang Minh">
+	<meta http-equiv="content-language" content="vi">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <%= favicon_link_tag '/dogoviet/img/favicon.png', rel: 'shortcut icon' %>
+    <link rel="alternate" href="<%= request.url %>" hreflang="vi" />
+    
+    <%= stylesheet_link_tag '//fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap&subset=vietnamese' %>
+    <%= stylesheet_link_tag '/dogoviet/css/bootstrap.css' %>
+    <%= stylesheet_link_tag '/dogoviet/css/owl.carousel.min.css' %>
+    <%= stylesheet_link_tag '/dogoviet/css/photoswipe.css' %>
+    <%= stylesheet_link_tag '/dogoviet/css/skin.css' %>
+    <%= stylesheet_link_tag '/dogoviet/css/select2.min.css' %>
+    <%= stylesheet_link_tag '/dogoviet/css/style.css' %>
+    <%= stylesheet_link_tag '/dogoviet/css/style.header-classic-variant-two.css', media: '(min-width: 1200px)' %>
+    <%= stylesheet_link_tag '/dogoviet/css/style.mobile-header-variant-two.css', media: '(max-width: 1199px)' %>
+    <%= stylesheet_link_tag '/dogoviet/css/all.min.css' %>
+    <%= stylesheet_link_tag '/dogoviet/css/main.css' %>
+</head>
+
+<body>
+    <div class="site">
+        <%= render "erp/dogoviet/frontend/modules/header" %>
+        <div class="site__body">
+            <%= yield %>
+        </div>
+        <%= render "erp/dogoviet/frontend/modules/footer" %>
+    </div>
+    <%= render "erp/dogoviet/frontend/modules/mobile_menu" %>
+	
+	<%= javascript_include_tag '//images.dmca.com/Badges/DMCABadgeHelper.min.js' %>
+    <%= javascript_include_tag '/dogoviet/js/jquery.min.js' %>
+    <%= javascript_include_tag '/dogoviet/js/bootstrap.bundle.min.js' %>
+    <%= javascript_include_tag '/dogoviet/js/owl.carousel.min.js' %>
+    <%= javascript_include_tag '/dogoviet/js/nouislider.min.js' %>
+    <%= javascript_include_tag '/dogoviet/js/photoswipe.min.js' %>
+    <%= javascript_include_tag '/dogoviet/js/photoswipe-ui-default.min.js' %>
+    <%= javascript_include_tag '/dogoviet/js/select2.min.js' %>
+    <%= javascript_include_tag '/dogoviet/js/number.js' %>
+    <%= javascript_include_tag '/dogoviet/js/main.js' %>
+</body>
+
+</html>

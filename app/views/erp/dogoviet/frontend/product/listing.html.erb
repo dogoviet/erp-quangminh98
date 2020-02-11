@@ -1,0 +1,144 @@
+<div class="block-header block-header--has-breadcrumb block-header--has-title">
+    <div class="container">
+        <div class="block-header__body">
+            <nav class="breadcrumb block-header__breadcrumb" aria-label="breadcrumb">
+                <ol class="breadcrumb__list">
+                    <li class="breadcrumb__spaceship-safe-area" role="presentation"></li>
+                    <li class="breadcrumb__item breadcrumb__item--parent breadcrumb__item--first">
+                        <%= link_to 'Trang Chủ', root_link, title: '', class: 'breadcrumb__item-link' %>
+                    </li>
+                    <li class="breadcrumb__item breadcrumb__item--parent">
+                        <%= link_to 'Bàn Thờ', category_listing_link, title: '', class: 'breadcrumb__item-link' %>
+                    </li>
+                    <li class="breadcrumb__item breadcrumb__item--current breadcrumb__item--last" aria-current="page">
+                        <span class="breadcrumb__item-link">Bàn Thờ Ông Địa - Thần Tài</span>
+                    </li>
+                    <li class="breadcrumb__title-safe-area" role="presentation"></li>
+                </ol>
+            </nav>
+            <h1 class="block-header__title">Bàn Thờ Ông Địa - Thần Tài</h1>
+        </div>
+    </div>
+</div>
+<div class="block-split">
+    <div class="container">
+        <div class="block-split__row row no-gutters">
+            <div class="block-split__item block-split__item-content col-auto">
+                <div class="block">
+                    <div class="products-view">
+                        <div class="products-view__list products-list products-list--grid--5" data-layout="grid" data-with-features="false">
+                            <div class="products-list__content">
+                                <% (0..14).each do |product| %>
+                                <div class="products-list__item">
+                                    <div class="product-card">                                        
+                                        <div class="product-card__image">
+                                            <%= link_to image_tag('/dogoviet/img/tmp/product-245x245.jpg', alt: '', title: ''),
+                                                product_detail_link, title: '' %>
+                                            <div class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
+                                                <div class="status-badge__body">
+                                                    <div class="status-badge__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13">
+                                                            <path d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="status-badge__text">Tủ Thờ</div>
+                                                    <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip" title="Tủ Thờ"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__info">
+                                            <div class="product-card__meta">
+                                                <span class="product-card__meta-title">Mã sản phẩm: </span>QM98-001
+                                            </div>
+                                            <div class="product-card__name">
+                                                <div>
+                                                    <div class="product-card__badges">
+                                                        <div class="tag-badge tag-badge--sale">Mới</div>
+                                                        <div class="tag-badge tag-badge--new">Bán chạy</div>
+                                                        <div class="tag-badge tag-badge--hot">Đặc biệt</div>
+                                                    </div>
+                                                    <%= link_to 'Tủ Thờ Huế Đục Chạm Tiên Cảnh', product_detail_link, title: '' %>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__rating">
+                                                <div class="rating product-card__rating-stars">
+                                                    <div class="rating__body">
+                                                        <div class="rating__star rating__star--active"></div>
+                                                        <div class="rating__star rating__star--active"></div>
+                                                        <div class="rating__star rating__star--active"></div>
+                                                        <div class="rating__star rating__star--active"></div>
+                                                        <div class="rating__star"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card__rating-label">4 sao / 22 đánh giá</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <div class="product-card__price product-card__price--current"><%= format_price(3500000) %></div>
+                                            </div>
+                                            <a class="product-card__addtocart-icon" href="">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                                    <circle cx="7" cy="17" r="2" />
+                                                    <circle cx="15" cy="17" r="2" />
+                                                    <path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6V1.4C0,1.2,0.2,1,0.4,1h2.5c1,0,1.8,0.6,2.1,1.6L5.1,3l2.3,6.8c0,0.1,0.2,0.2,0.3,0.2h8.6c0.1,0,0.3-0.1,0.3-0.2l1.3-4.4C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <% end %>
+                            </div>
+                        </div>
+                        <div class="products-view__pagination">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link page-link--with-arrow" href="" aria-label="Previous">
+                                            <span class="page-link__arrow page-link__arrow--left" aria-hidden="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11">
+                                                    <path d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page">
+                                        <span class="page-link">2 <span class="sr-only">(current)</span>
+                                        </span>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item page-item--dots">
+                                        <div class="pagination__dots"></div>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">9</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link page-link--with-arrow" href="" aria-label="Next">
+                                            <span class="page-link__arrow page-link__arrow--right" aria-hidden="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11">
+                                                    <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9C-0.1,9.8-0.1,10.4,0.3,10.7z"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="products-view__pagination-legend">Hiển thị 15 / 80 sản phẩm</div>
+                        </div>
+                    </div>
+                </div>
+                <%= render "erp/dogoviet/frontend/modules/newest_listing" %>
+            </div>
+        </div>
+        <div class="block-space block-space--layout--divider-xs"></div>
+    </div>
+</div>

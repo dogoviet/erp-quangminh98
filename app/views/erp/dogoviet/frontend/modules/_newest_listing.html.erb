@@ -1,0 +1,153 @@
+<div class="block-space block-space--layout--divider-xs"></div>
+<div class="block block-products-carousel" data-layout="grid-5">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-header__body">
+                <h2 class="section-header__title">Sản Phẩm Mới</h2>
+                <div class="section-header__spring"></div>
+                <div class="section-header__arrows">
+                    <div class="arrow section-header__arrow section-header__arrow--prev arrow--prev">
+                        <button class="arrow__button" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11">
+                                <path d="M6.7,0.3L6.7,0.3c-0.4-0.4-0.9-0.4-1.3,0L0,5.5l5.4,5.2c0.4,0.4,0.9,0.3,1.3,0l0,0c0.4-0.4,0.4-1,0-1.3l-4-3.9l4-3.9C7.1,1.2,7.1,0.6,6.7,0.3z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="arrow section-header__arrow section-header__arrow--next arrow--next">
+                        <button class="arrow__button" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11">
+                                <path d="M0.3,10.7L0.3,10.7c0.4,0.4,0.9,0.4,1.3,0L7,5.5L1.6,0.3C1.2-0.1,0.7,0,0.3,0.3l0,0c-0.4,0.4-0.4,1,0,1.3l4,3.9l-4,3.9C-0.1,9.8-0.1,10.4,0.3,10.7z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="section-header__divider"></div>
+            </div>
+        </div>
+        <div class="block-products-carousel__carousel">
+            <div class="block-products-carousel__carousel-loader"></div>
+            <div class="owl-carousel">
+                <% (0..6).each do |product| %>
+                <div class="block-products-carousel__column">
+                    <div class="block-products-carousel__cell">
+                        <div class="product-card product-card--layout--grid">                            
+                            <div class="product-card__image">
+                                <%= link_to image_tag('/dogoviet/img/tmp/product-245x245.jpg', alt: ''), '', title: '' %>
+                                <div class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
+                                    <div class="status-badge__body">
+                                        <div class="status-badge__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13">
+                                                <path d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z" />
+                                            </svg>
+                                        </div>
+                                        <div class="status-badge__text">Tủ Thờ</div>
+                                        <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip" title=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__meta">
+                                    <span class="product-card__meta-title">Mã sản phẩm: </span>QM98-001
+                                </div>
+                                <div class="product-card__name">
+                                    <div>
+                                        <div class="product-card__badges">
+                                            <div class="tag-badge tag-badge--sale">Bán chạy</div>
+                                            <div class="tag-badge tag-badge--new">Mới</div>
+                                            <div class="tag-badge tag-badge--hot">Đặc biệt</div>
+                                        </div>
+                                        <%= link_to 'Tủ Thờ Huế Đục Chạm Tiên Cảnh', '', title: '' %>
+                                    </div>
+                                </div>
+                                <div class="product-card__rating">
+                                    <div class="rating product-card__rating-stars">
+                                        <div class="rating__body">
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__rating-label">4 sao / 22 đánh giá</div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <div class="product-card__prices">
+                                    <div class="product-card__price product-card__price--current"><%= format_price(3500000) %></div>
+                                </div>
+                                <a class="product-card__addtocart-icon" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <circle cx="7" cy="17" r="2" />
+                                        <circle cx="15" cy="17" r="2" />
+                                        <path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6V1.4C0,1.2,0.2,1,0.4,1h2.5c1,0,1.8,0.6,2.1,1.6L5.1,3l2.3,6.8c0,0.1,0.2,0.2,0.3,0.2h8.6c0.1,0,0.3-0.1,0.3-0.2l1.3-4.4C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-products-carousel__column">
+                    <div class="block-products-carousel__cell">
+                        <div class="product-card product-card--layout--grid">                            
+                            <div class="product-card__image">
+                                <%= link_to image_tag('/dogoviet/img/tmp/product-245x245.jpg', alt: ''), '', title: '' %>
+                                <div class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
+                                    <div class="status-badge__body">
+                                        <div class="status-badge__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13">
+                                                <path d="M12,4.4L5.5,11L1,6.5l1.4-1.4l3.1,3.1L10.6,3L12,4.4z" />
+                                            </svg>
+                                        </div>
+                                        <div class="status-badge__text">Tủ Thờ</div>
+                                        <div class="status-badge__tooltip" tabindex="0" data-toggle="tooltip" title=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__info">
+                                <div class="product-card__meta">
+                                    <span class="product-card__meta-title">Mã sản phẩm: </span>QM98-001
+                                </div>
+                                <div class="product-card__name">
+                                    <div>
+                                        <div class="product-card__badges">
+                                            <div class="tag-badge tag-badge--sale">Bán chạy</div>
+                                            <div class="tag-badge tag-badge--new">Mới</div>
+                                            <div class="tag-badge tag-badge--hot">Đặc biệt</div>
+                                        </div>
+                                        <%= link_to 'Tủ Thờ Huế Đục Chạm Đẹp', '', title: '' %>
+                                    </div>
+                                </div>
+                                <div class="product-card__rating">
+                                    <div class="rating product-card__rating-stars">
+                                        <div class="rating__body">
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star rating__star--active"></div>
+                                            <div class="rating__star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__rating-label">4 sao / 22 đánh giá</div>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <div class="product-card__prices">
+                                    <div class="product-card__price product-card__price--current"><%= format_price(5000000) %></div>
+                                </div>
+                                <a class="product-card__addtocart-icon" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                                        <circle cx="7" cy="17" r="2" />
+                                        <circle cx="15" cy="17" r="2" />
+                                        <path d="M20,4.4V5l-1.8,6.3c-0.1,0.4-0.5,0.7-1,0.7H6.7c-0.4,0-0.8-0.3-1-0.7L3.3,3.9C3.1,3.3,2.6,3,2.1,3H0.4C0.2,3,0,2.8,0,2.6V1.4C0,1.2,0.2,1,0.4,1h2.5c1,0,1.8,0.6,2.1,1.6L5.1,3l2.3,6.8c0,0.1,0.2,0.2,0.3,0.2h8.6c0.1,0,0.3-0.1,0.3-0.2l1.3-4.4C17.9,5.2,17.7,5,17.5,5H9.4C9.2,5,9,4.8,9,4.6V3.4C9,3.2,9.2,3,9.4,3h9.2C19.4,3,20,3.6,20,4.4z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>
